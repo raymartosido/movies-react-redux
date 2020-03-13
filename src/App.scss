@@ -1,0 +1,125 @@
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.d-block {
+  display: block;
+}
+.txt-success {
+  color: green;
+}
+.txt-red {
+  color: red;
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+//End General Styles
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.header {
+  display: flex;
+}
+
+.siteLogo {
+  width: 240px;
+}
+.siteNav {
+  width: 86%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ul {
+    list-style: none;
+  }
+  li {
+    float: left;
+
+    > ul {
+      display: none;
+    }
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+  }
+}
+
+.movieList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+
+  a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+  }
+  .movieCard {
+      display: flex;
+      flex-direction: column;
+      width: 240px;
+  }
+  .movieImg {
+      padding-top: 121%;
+      overflow: hidden;
+      position: relative;
+
+      img {
+          max-height: 340px;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          text-align: center;
+          width: 100%;
+      }
+  }
+  .info {
+      padding: 15px;
+      p {
+          margin: 10px 0 0;
+          font-size: 12px;
+      }
+  }
+}
+
+.movieSingle {
+  margin: 20px 0;
+  .movieCard {
+    display: flex;
+  }
+  .info {
+    padding-left: 15px;
+  }
+  .title {
+    text-decoration: none;
+    color: #000;
+  }
+  .more {
+    font-style: italic;
+  }
+}
+
+.Footer {
+  background-color: #000;
+  padding: 15px;
+  color: #fff;
+}
